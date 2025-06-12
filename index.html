@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha Shrestha | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #6b21a8, #000000, #1f2937);
+      color: white;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: fadeInDown 1s forwards;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #d1d5db;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    section.grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 1s;
+    }
+
+    @media (min-width: 768px) {
+      section.grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #f472b6;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      color: #e5e7eb;
+    }
+
+    .card p {
+      color: #d1d5db;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #ec4899;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #db2777;
+    }
+
+    @keyframes fadeInDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey, I’m Sneha 👋</h1>
+  <p class="subtitle">A GenZ UI/UX Designer blending vibes with function.</p>
+
+  <section class="grid">
+    <div class="card">
+      <h2>✨ Projects</h2>
+      <ul>
+        <li>• E-Wallet App UI – Internship @ Peace Nepal Dot Com</li>
+        <li>• Personal QR Payment Design (Figma)</li>
+        <li>• Portfolio Website (this one!)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I'm Sneha Shrestha, a UI/UX designer passionate about crafting smooth,
+        aesthetic digital experiences. I love experimenting with colors,
+        curves, and clean layouts that click with Gen Z.
+      </p>
+      <button class="btn">Download Resume</button>
+    </div>
+  </section>
+</body>
+</html>
